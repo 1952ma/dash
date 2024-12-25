@@ -5,7 +5,6 @@ services:
     container_name: fastapi_container
     ports:
       - "8000:8000"
-    restart: unless-stopped
 
   frontend:
     build:
@@ -17,4 +16,4 @@ services:
       - backend
     environment:
       - API_URL=http://backend:8000  # Adresse de l'API pour la communication interne dans le réseau Docker
-    restart: unless-stopped
+    

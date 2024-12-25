@@ -48,8 +48,9 @@ def get_prediction(api_url, client_id):
         return None
 
 # Définir les variables principales
-API_URL = "http://127.0.0.1:8000"
+API_URL = "http://backend:8000"
 model, new_clients_df, description_feature_df = load_model_and_data()
+
 # --- Titre de l'application ---
 st.title("Scoring crédit")
 st.markdown(

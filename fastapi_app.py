@@ -1,4 +1,4 @@
-#--reload permet au serveur de redémarrer automatiquement lorsque je modifie le code
+# uvicorn fastapi_app:app --reload 
 
 #2 -puis  http://127.0.0.1:8000/clients
 
